@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="" content="" http-equiv="" content="">
+    <title>Request</title>
+
+    <link rel="stylesheet" type="text/css" href = "{{url_for('static', filename='css/main.css')}}">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery/min.js"> </script>
+   <!-- <script type="text/javascript">
+        (function () {
+        'use strict';
+
+        var selector = {
+            $button: document.querySelector('a'),
+            $one: document.querySelector('.one'),
+            $two: document.querySelector('.two')
+        };
+
+        selector.$button.addEventListener('click', function (event) {
+            event.preventDefault();
+            if (isHidden(selector.$one)) {
+                changeDisplay(selector.$one, 'block');
+                changeDisplay(selector.$two, 'none');
+            } else {
+                changeDisplay(selector.$one, 'none');
+                changeDisplay(selector.$two, 'block');
+            }
+        });
+
+        function changeDisplay($node, value) {
+            $node.style.display = value;
+            return $node;
+        }
+
+        function isHidden($node) {
+            return window.getComputedStyle($node).display === 'none';
+        }
+
+    }());
+    </script>
+    <script type="text/javascript">
+       document.querySelector('button').addEventListener('click', function (e) {
+        var div = document.querySelector('div')
+        div.style.display = div.style.display == 'none' ? 'block' : 'none'
+        })
+    </script>
+    <style type="text/javascript">
+        document.querySelector('button').addEventListener('click', function (e) {
+          var div = document.querySelector('div')
+          div.hidden = !div.hidden
+        })
+    </style>
+    <style type="text/css">
+        [hidden] {
+            display: none !important;
+        }
+    </style>-->
+</head>
+
+<body>
+
+
+    <button id="but">Click me</button>
+
+    <div style="display: block" id="one">Другой текст</div>
+    <div style="display: none" id="two">Какой-то текст</div>
+<!--
+    <div class="one" style="display: none;">
+        hello
+    </div>
+    <div class="two" style="display: none;">
+        hi
+    </div>
+    <a href="#" onclick="toggle_visibility('id_of_element_to_toggle');">Изменить</a>-->
+
+    <script src="static/js/test.js"></script>
+
+</body>
