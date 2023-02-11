@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="" content="" http-equiv="" content="">
+    <link rel="stylesheet" type="text/css" href = "{{url_for('static', filename='css/main.css')}}">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery/min.js"> </script>
+    <title>Request</title>
+    <style type="text/css"> html{overflow:hidden;} </style>
+
+</head>
+
+<body>
+
+    <img src="static/image/home.jpg" class="screen">
+     <a href="/home" class="black"></a>
+    <div  class="request">
+        <div>Отправить заявку</div>
+        <p class="one" style = "display:none;">re</p>
+        <p class="two" style = "display:none;">hello</p>
+        <a href="/home" class="closse"><img src="static/image/close.jpg"></a>
+        <input type="text" name = "Name" id="Name" title="Имя" class="inp1" placeholder=" Имя">
+        <input type="text" name = "Email" id="Email" title="Почта" class="inp2" placeholder=" Почта" >
+        <a href="#" class="immport aa">Отправить заявку</a>
+    </div>
+    <div style = "display:block;" class="request">
+        <div>Мы с вами свяжемся!</div>
+        <a href="/home" class="closse"><img src="static/image/close.jpg"></a>
+        <a href="#" class="immport">пока</a>
+    </div>
+</body>

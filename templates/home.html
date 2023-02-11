@@ -1,0 +1,60 @@
+{%extends 'base.html'%}
+
+{%block title%}
+Hello
+{%endblock%}
+
+
+{%block body%}
+    <div class="center_block">
+
+        <img src="static/image/im1.jpg" width="" height="" alt=""
+         style="margin-top:237px;z-index: -2;
+        position:relative;" class="block_home">
+
+        <div class="block_home"
+             style="margin-top:80px; margin-bottom:80px; z-index: -2; position:relative;">
+            <p id="in_post">
+                Lorem ipsum dolor sit amet consectetur. Sed tempor nunc commodo tempus lorem. Faucibus tellus massa urna dignissim a massa sollicitudin commodo vitae. Id dui tincidunt mauris egestas consectetur. Donec vulputate nisl at ac. Mauris morbi scelerisque imperdiet bibendum fermentum molestie. Et justo tortor amet eu morbi nisl amet mauris. Porttitor elementum a non volutpat et tristique. Suscipit proin viverra accumsan tortor elit volutpat arcu sodales amet. Pellentesque odio nec nisl tortor.
+            </p>
+            <a href="#" class="in_button" id="butGoToPost" >
+                Отправить заявку
+            </a>
+        </div>
+
+    </div>
+
+   <!-- -->
+
+    <a href="#" class="black butBlack" style="display:none"></a>
+    <div style = "display:none;" class="request" id="one">
+
+        <div>Отправить заявку</div>
+        <a href="#" class="closse butBlack" style="display:none"><img src="static/image/close.jpg"></a>
+
+        <form method="post">
+            <input style="" type="text" name = "name" id="name" title="Имя" class="inp1" placeholder=" Имя">
+            <input style="" type="text" name = "email" id="email" title="Почта" class="inp2" placeholder=" Почта" >
+            <input type="submit" style=" padding-left:162px;
+                padding-right:162px;" class="immport" id="butOutHome" value="Отправить заявку">
+        </form>
+
+    </div>
+
+    <div style = "display:none;" class="request two">
+            <img src="static/image/yes.jpg">
+            <p>{{name}}, спасибо за Ваш интерес!<br>Мы ответим Вам на почту {{email}}</p>
+            <a href="#" class="closse butBlack" style="display:none"><img src="static/image/close.jpg"></a>
+            <a href="#" class="immport1 butGoToHome" style="padding-left:125px;padding-right:125px;">Вернуться на главную</a>
+    </div>
+
+    <script src="static/js/test.js"></script>
+
+    {%if pos ==1%}
+        <script>OnDiv1()</script>
+        <script>inputActive()</script>
+    {%elif pos == 2%}
+        <script>OnDiv2()</script>
+    {%endif%}
+
+{%endblock%}
