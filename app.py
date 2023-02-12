@@ -28,6 +28,7 @@ def Home():
         article = Article(name=name, email=email)
         if(article.name=="" or article.email==""):
             #return "При добавлении статьи возникли ошибки!"
+            alert("При добавлении статьи возникли ошибки!")
             return render_template("home.html", pos=1,name="",email="")#, article=article)
         try:
             db.session.add(article)
@@ -36,6 +37,7 @@ def Home():
             return render_template("home.html", pos=2,name=article.name,email=article.email)#, article=article)
         except:
             #return "При добавлении статьи возникли ошибки!"
+            alert("При добавлении статьи возникли ошибки!")
             return render_template("home.html", pos=1,name="",email="")#, article=article)
     else:
         return render_template("home.html", pos=0,name="",email="")
